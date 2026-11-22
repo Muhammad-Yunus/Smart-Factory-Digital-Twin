@@ -264,7 +264,7 @@ export function CompletionRingGauge({ value }: { value: number }) {
   const dashOffset = circumference * (1 - clamped / 100);
 
   return (
-    <div className="relative w-[108px] h-[108px] flex items-center justify-center shrink-0 select-none">
+    <div className="relative w-[98px] h-[98px] xl:w-[104px] xl:h-[104px] flex items-center justify-center shrink-0 select-none">
       <svg viewBox="0 0 100 100" className="w-full h-full">
         <defs>
           <linearGradient id="ringGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">

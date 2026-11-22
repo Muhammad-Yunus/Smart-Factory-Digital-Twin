@@ -454,7 +454,7 @@ export default function App() {
             {/* Panel 1: AS/RS Order Task Trend + Completion Ring */}
             <div className="shrink-0">
               <SectionHeader title="AS/RS Order Task Trend" />
-              <div className="relative flex items-center gap-2">
+              <div className="relative flex items-center gap-1.5">
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center justify-center gap-5 text-[10px] text-slate-300 mb-0.5">
                     <span className="inline-flex items-center gap-1.5">
@@ -470,7 +470,7 @@ export default function App() {
                     <OrderTrendChart data={state?.orderTrends ?? []} />
                   </div>
                 </div>
-                <div className="shrink-0 xl:-mr-8">
+                <div className="shrink-0">
                   <CompletionRingGauge value={kpi?.ringCompletionRate ?? 0} />
                 </div>
               </div>
